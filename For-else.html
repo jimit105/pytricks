@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Python Tricks &#8212; PyTricks</title>
+    <title>For-else in Python &#8212; PyTricks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -36,20 +36,21 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://jimit105.github.io/pytricks/index.html" />
+    <link rel="canonical" href="https://jimit105.github.io/pytricks/For-else.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dockerfile for Python" href="Dockerfile for Python.html" />
+    <link rel="next" title="Hide prints" href="Hide print.html" />
+    <link rel="prev" title="Date Parser" href="Date Parser.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://jimit105.github.io/pytricks/index.html" />
+<meta property="og:url"         content="https://jimit105.github.io/pytricks/For-else.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Python Tricks" />
-<meta property="og:description" content="Python Tricks  Collection of Python Tips &amp; Tricks  &lt;p&gt;&lt;strong&gt;Subscribe to my articles&lt;/strong&gt;&lt;/p&gt; &lt;form style=&#34;padding:3px;text-align:center;&#34; action=&#34;https:/" />
+<meta property="og:title"       content="For-else in Python" />
+<meta property="og:description" content="For-else in Python  for i in range(5):     if i == 5:         break else:         print(&#39;No break encountered&#39;) print(&#39;Out of loop!&#39;)  No break encountered Out " />
 
 
 <meta name="twitter:card" content="summary" />
@@ -65,7 +66,7 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="#">
+<a class="navbar-brand text-wrap" href="index.html">
   
   
   <h1 class="site-logo" id="site-title">PyTricks</h1>
@@ -81,12 +82,12 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#">
+  <a class="reference internal" href="index.html">
    Python Tricks
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Dockerfile for Python.html">
    Dockerfile for Python
@@ -102,8 +103,8 @@
    Date Parser
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="For-else.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    For-else in Python
   </a>
  </li>
@@ -150,9 +151,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/For-else.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -170,10 +171,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2FFor-else.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/index.md"><button
+        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/For-else.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -186,6 +187,31 @@
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/jimit105/pytricks/master?urlpath=tree/For-else.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/jimit105/pytricks/blob/master/For-else.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
 
     </div>
 
@@ -204,20 +230,42 @@
         
               <div>
                 
-  <div class="section" id="python-tricks">
-<h1>Python Tricks<a class="headerlink" href="#python-tricks" title="Permalink to this headline">¶</a></h1>
-<p>Collection of Python Tips &amp; Tricks</p>
-<p><strong>Subscribe to my articles</strong></p>
-<form style="padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=JimitDholakiaMedium', 'popupwindow', 'scrollbars=yes');return true">
- <p>Enter your email address: 
-  <input type="text" style="width:140px" name="email"/>
- </p>
- <input type="hidden" value="JimitDholakiaMedium" name="uri"/>
- <input type="hidden" name="loc" value="en_US"/>
- <input type="submit" value="Subscribe" />
-</form>
-<script src="//feeds.feedburner.com/JimitDholakiaMedium?format=sigpro&displayExcerpts=false" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="//feeds.feedburner.com/JimitDholakiaMedium"></a><br/>Powered by FeedBurner</p> </noscript>
-<div class="toctree-wrapper compound">
+  <div class="section" id="for-else-in-python">
+<h1>For-else in Python<a class="headerlink" href="#for-else-in-python" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No break encountered&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Out of loop!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>No break encountered
+Out of loop!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No break encountered&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Out of loop!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Out of loop!
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -249,7 +297,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="Dockerfile for Python.html" title="next page">Dockerfile for Python</a>
+    <a class='left-prev' id="prev-link" href="Date Parser.html" title="previous page">Date Parser</a>
+    <a class='right-next' id="next-link" href="Hide print.html" title="next page">Hide prints</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

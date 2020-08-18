@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Python Tricks &#8212; PyTricks</title>
+    <title>Dockerfile for Python &#8212; PyTricks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -36,20 +36,21 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://jimit105.github.io/pytricks/index.html" />
+    <link rel="canonical" href="https://jimit105.github.io/pytricks/Dockerfile for Python.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dockerfile for Python" href="Dockerfile for Python.html" />
+    <link rel="next" title="Argument Unpacking" href="Argument Unpacking.html" />
+    <link rel="prev" title="Python Tricks" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://jimit105.github.io/pytricks/index.html" />
+<meta property="og:url"         content="https://jimit105.github.io/pytricks/Dockerfile for Python.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Python Tricks" />
-<meta property="og:description" content="Python Tricks  Collection of Python Tips &amp; Tricks  &lt;p&gt;&lt;strong&gt;Subscribe to my articles&lt;/strong&gt;&lt;/p&gt; &lt;form style=&#34;padding:3px;text-align:center;&#34; action=&#34;https:/" />
+<meta property="og:title"       content="Dockerfile for Python" />
+<meta property="og:description" content="Dockerfile for Python  Minimal Dockerfile for Python Applications  FROM python:3.6  ENV PYTHONUNBUFFERED=0 ENV LANG C.UTF-8 ENV LC_ALL C.UTF-8  RUN apt-get upda" />
 
 
 <meta name="twitter:card" content="summary" />
@@ -65,7 +66,7 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="#">
+<a class="navbar-brand text-wrap" href="index.html">
   
   
   <h1 class="site-logo" id="site-title">PyTricks</h1>
@@ -81,14 +82,14 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#">
+  <a class="reference internal" href="index.html">
    Python Tricks
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="Dockerfile for Python.html">
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Dockerfile for Python
   </a>
  </li>
@@ -150,7 +151,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Dockerfile for Python.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -170,10 +171,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2FDockerfile for Python.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/index.md"><button
+        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/Dockerfile for Python.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -204,20 +205,26 @@
         
               <div>
                 
-  <div class="section" id="python-tricks">
-<h1>Python Tricks<a class="headerlink" href="#python-tricks" title="Permalink to this headline">¶</a></h1>
-<p>Collection of Python Tips &amp; Tricks</p>
-<p><strong>Subscribe to my articles</strong></p>
-<form style="padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=JimitDholakiaMedium', 'popupwindow', 'scrollbars=yes');return true">
- <p>Enter your email address: 
-  <input type="text" style="width:140px" name="email"/>
- </p>
- <input type="hidden" value="JimitDholakiaMedium" name="uri"/>
- <input type="hidden" name="loc" value="en_US"/>
- <input type="submit" value="Subscribe" />
-</form>
-<script src="//feeds.feedburner.com/JimitDholakiaMedium?format=sigpro&displayExcerpts=false" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="//feeds.feedburner.com/JimitDholakiaMedium"></a><br/>Powered by FeedBurner</p> </noscript>
-<div class="toctree-wrapper compound">
+  <div class="section" id="dockerfile-for-python">
+<h1>Dockerfile for Python<a class="headerlink" href="#dockerfile-for-python" title="Permalink to this headline">¶</a></h1>
+<p>Minimal Dockerfile for Python Applications</p>
+<div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span> <span class="s">python:3.6</span>
+
+<span class="k">ENV</span> <span class="nv">PYTHONUNBUFFERED</span><span class="o">=</span><span class="m">0</span>
+<span class="k">ENV</span> LANG C.UTF-8
+<span class="k">ENV</span> LC_ALL C.UTF-8
+
+<span class="k">RUN</span> apt-get update <span class="se">\</span>
+    <span class="o">&amp;&amp;</span> apt-get install -y --no-install-recommends <span class="se">\</span>
+    <span class="o">&amp;&amp;</span> rm -rf /var/lib/apt/lists/*
+
+<span class="k">COPY</span> . .
+
+<span class="k">RUN</span> pip install --no-cache-dir -r requirements.txt
+
+<span class="k">EXPOSE</span><span class="s"> 5010</span>
+<span class="k">CMD</span> <span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span> <span class="s2">&quot;-u&quot;</span><span class="p">,</span> <span class="s2">&quot;./src/app.py&quot;</span><span class="p">]</span>
+</pre></div>
 </div>
 </div>
 
@@ -249,7 +256,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="Dockerfile for Python.html" title="next page">Dockerfile for Python</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Python Tricks</a>
+    <a class='right-next' id="next-link" href="Argument Unpacking.html" title="next page">Argument Unpacking</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
