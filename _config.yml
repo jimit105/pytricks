@@ -1,7 +1,7 @@
 title: PyTricks
 author: Jimit Dholakia
 logo: py_logo.png
-exclude_patterns: ['README.md','CONTRIBUTING.md']
+exclude_patterns: ['README.md','.github/CONTRIBUTING.md']
 
 launch_buttons:
   binderhub_url: https://mybinder.org
