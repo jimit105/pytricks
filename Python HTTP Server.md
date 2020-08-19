@@ -12,4 +12,6 @@ You can use this server to share files between the devices on the LAN.
 First, find the local IP address of the device on which the server is hosted using the command `ipconfig` (For Windows) or `ifconfig` (For Linux).  
 Then, enter the URL `<ip-address>:8000` in any web browser of the devices connected to the LAN.
 
-> **Pro Tip:** You can host a website using this server by placing the `index.html` file in the root folder.
+```{tip}
+You can host a website using this server by placing the `index.html` file in the root folder.
+```
