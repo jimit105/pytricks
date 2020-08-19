@@ -219,19 +219,20 @@
 <h1>Underscore in Python<a class="headerlink" href="#underscore-in-python" title="Permalink to this headline">¶</a></h1>
 <p>Besides its usage as a normal variable, <code class="docutils literal notranslate"><span class="pre">_</span></code> is a special variable in Python which returns the value of the last executed expression in Python interpreter.</p>
 <p>This is useful when we would like to access the result of the previous calculation or we would like to interact with objects without assigning a name.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example - 1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">5</span>
-<span class="mi">15</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">_</span>
-<span class="mi">15</span>
-
-<span class="c1">#Example - 2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">_</span>
-<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<p><strong>Example - 1</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="go">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span>
+<span class="go">15</span>
+</pre></div>
+</div>
+<p><strong>Example - 2</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span>
+<span class="go">[10, 5]</span>
 </pre></div>
 </div>
 </div>
