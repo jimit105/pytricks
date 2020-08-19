@@ -1,5 +1,6 @@
 title: PyTricks
 author: Jimit Dholakia
+logo: py_logo.png
 exclude_patterns: ['README.md','CONTRIBUTING.md']
 
 launch_buttons:
@@ -17,6 +18,7 @@ html:
   use_edit_page_button: true
   use_repository_button : true
   use_issues_button: true
+  favicon: favicon_py.png
     
 sphinx:
   extra_extensions: ['sphinx_sitemap']
