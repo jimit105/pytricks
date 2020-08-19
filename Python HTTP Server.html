@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Search &#8212; PyTricks</title>
+    <title>Python HTTP Server &#8212; PyTricks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
-    
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
@@ -37,26 +36,24 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <link rel="canonical" href="https://jimit105.github.io/pytricks/search.html" />
+    <link rel="canonical" href="https://jimit105.github.io/pytricks/Python HTTP Server.html" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="For-else in Python" href="For-else.html" />
+    <link rel="prev" title="Date Parser" href="Date Parser.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://jimit105.github.io/pytricks/search.html" />
+<meta property="og:url"         content="https://jimit105.github.io/pytricks/Python HTTP Server.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="PyTricks" />
-<meta property="og:description" content="" />
+<meta property="og:title"       content="Python HTTP Server" />
+<meta property="og:description" content="Python HTTP Server  To create a simple Python HTTP Server simply navigate to the desired folder and type the following in command prompt: python -m http.server " />
 
 
 <meta name="twitter:card" content="summary" />
-
 
 
   </head>
@@ -77,7 +74,7 @@
 </a>
 </div>
 
-<form class="bd-search d-flex align-items-center" action="#" method="get">
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
@@ -90,7 +87,7 @@
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="Dockerfile for Python.html">
    Dockerfile for Python
@@ -106,8 +103,8 @@
    Date Parser
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Python HTTP Server.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Python HTTP Server
   </a>
  </li>
@@ -155,6 +152,18 @@
             class="fas fa-download"></i></button>
 
     
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Python HTTP Server.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
 </div>
         <!-- Source interaction buttons -->
 
@@ -167,10 +176,12 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2FPython HTTP Server.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
+        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/Python HTTP Server.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
 </div>
 
@@ -186,6 +197,9 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
         <nav id="bd-toc-nav">
             
         </nav>
@@ -196,29 +210,41 @@
         
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  <p>
-    From here you can search these documents. Enter your search
-    words into the box below and click "search". Note that the search
-    function will automatically search for all of the words. Pages
-    containing fewer words won't appear in the result list.
-  </p>
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  <div id="search-results">
-  
-  </div>
+  <div class="section" id="python-http-server">
+<h1>Python HTTP Server<a class="headerlink" href="#python-http-server" title="Permalink to this headline">¶</a></h1>
+<p>To create a simple Python HTTP Server simply navigate to the desired folder and type the following in command prompt:
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">http.server</span> <span class="pre">8000</span></code><br />
+This command will create an HTTP Server hosted on port <code class="docutils literal notranslate"><span class="pre">8000</span></code>.</p>
+<p>You can use this server for file sharing purposes.<br />
+To see the contents of the folder, enter the following URL in any web browser:<br />
+<code class="docutils literal notranslate"><span class="pre">localhost:8000</span></code> or <code class="docutils literal notranslate"><span class="pre">127.0.0.1:8000</span></code></p>
+<p>You can use this server to share files between the devices on the LAN.<br />
+First, find the local IP address of the device on which the server is hosted using the command <code class="docutils literal notranslate"><span class="pre">ipconfig</span></code> (For Windows) or <code class="docutils literal notranslate"><span class="pre">ifconfig</span></code> (For Linux).<br />
+Then, enter the URL <code class="docutils literal notranslate"><span class="pre">&lt;ip-address&gt;:8000</span></code> in any web browser of the devices connected to the LAN.</p>
+<blockquote>
+<div><p><strong>Pro Tip:</strong> You can host a website using this server by placing the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file in the root folder.</p>
+</div></blockquote>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -228,6 +254,8 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="Date Parser.html" title="previous page">Date Parser</a>
+    <a class='right-next' id="next-link" href="For-else.html" title="next page">For-else in Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
