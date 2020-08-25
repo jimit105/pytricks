@@ -21,6 +21,8 @@ html:
   favicon: favicon_py.png
     
 sphinx:
-  extra_extensions: ['sphinx_sitemap']
+  extra_extensions: ['sphinx_sitemap', 'sphinxfeed']
   config:
     html_extra_path: ['robots.txt']
+    feed_base_url: 'https://jimit105.github.io/pytricks/'
+    feed_author: 'Jimit Dholakia'
