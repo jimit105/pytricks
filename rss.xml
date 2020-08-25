@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0"><channel><title>Python</title><link>https://jimit105.github.io/pytricks</link><description /><copyright>2020</copyright><item><title>Argument Unpacking</title><link>https://jimit105.github.io/pytricks/Argument Unpacking.html</link><description>&lt;div class="section" id="argument-unpacking"&gt;
+<rss version="2.0"><channel><title>PyTricks</title><link>https://jimit105.github.io/pytricks</link><description /><copyright>2020</copyright><item><title>Argument Unpacking</title><link>https://jimit105.github.io/pytricks/Argument Unpacking.html</link><description>&lt;div class="section" id="argument-unpacking"&gt;
  
 &lt;p&gt;We can use &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;*&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a list, tuple and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;**&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a dictionary.&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
