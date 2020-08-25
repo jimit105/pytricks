@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"><channel><title>Python</title><link>https://jimit105.github.io/pytricks/</link><description /><copyright>2020</copyright><item><title>Argument Unpacking</title><link>https://jimit105.github.io/pytricks//Argument Unpacking.html</link><description>&lt;div class="section" id="argument-unpacking"&gt;
+ 
+&lt;p&gt;We can use &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;*&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a list, tuple and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;**&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a dictionary.&lt;/p&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;list1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;tuple1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;dict1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;'a'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'c'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;list1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;1 2 3
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;tuple1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;4 5 6
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;dict1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;7 8 9
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Date Parser</title><link>https://jimit105.github.io/pytricks//Date Parser.html</link><description>&lt;div class="section" id="date-parser"&gt;
+ 
+&lt;p&gt;Convert any date in a specified format&lt;/p&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;dateutil.parser&lt;/span&gt;
+
+&lt;span class="n"&gt;input_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'10th May 1996'&lt;/span&gt;
+
+&lt;span class="n"&gt;parsed_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dateutil&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;input_date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;final_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strftime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;parsed_date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;-%m-%Y'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;final_date&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;10-05-1996
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Dockerfile for Python</title><link>https://jimit105.github.io/pytricks//Dockerfile for Python.html</link><description>&lt;div class="section" id="dockerfile-for-python"&gt;
+ 
+&lt;p&gt;Minimal Dockerfile for Python Applications&lt;/p&gt;
+&lt;div class="highlight-dockerfile notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="s"&gt;python:3.6&lt;/span&gt;
+
+&lt;span class="k"&gt;ENV&lt;/span&gt; &lt;span class="nv"&gt;PYTHONUNBUFFERED&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;
+&lt;span class="k"&gt;ENV&lt;/span&gt; LANG C.UTF-8
+&lt;span class="k"&gt;ENV&lt;/span&gt; LC_ALL C.UTF-8
+
+&lt;span class="k"&gt;RUN&lt;/span&gt; apt-get update &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; apt-get install -y --no-install-recommends &lt;span class="se"&gt;\&lt;/span&gt;
+    &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -rf /var/lib/apt/lists/*
+
+&lt;span class="k"&gt;COPY&lt;/span&gt; . .
+
+&lt;span class="k"&gt;RUN&lt;/span&gt; pip install --no-cache-dir -r requirements.txt
+
+&lt;span class="k"&gt;EXPOSE&lt;/span&gt;&lt;span class="s"&gt; 5010&lt;/span&gt;
+&lt;span class="k"&gt;CMD&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"python"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"-u"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"./src/app.py"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>For-else in Python</title><link>https://jimit105.github.io/pytricks//For-else.html</link><description>&lt;div class="section" id="for-else-in-python"&gt;
+ 
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'No break encountered'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Out of loop!'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;No break encountered
+Out of loop!
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'No break encountered'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Out of loop!'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;Out of loop!
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Hide prints</title><link>https://jimit105.github.io/pytricks//Hide print.html</link><description>&lt;div class="section" id="hide-prints"&gt;
+ 
+&lt;p&gt;Hide print statements in specific sections of the code&lt;/p&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HiddenPrints&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__enter__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_original_stdout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;devnull&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'w'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__exit__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;exc_type&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;exc_val&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;exc_tb&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+        &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;stdout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_original_stdout&lt;/span&gt;
+        
+        
+&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;HiddenPrints&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"This will not be printed"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"This will be printed as before"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;This will be printed as before
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Python HTTP Server</title><link>https://jimit105.github.io/pytricks//Python HTTP Server.html</link><description>&lt;div class="section" id="python-http-server"&gt;
+ 
+&lt;p&gt;To create a simple Python HTTP Server simply navigate to the desired folder and type the following in command prompt:
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;http.server&lt;/span&gt; &lt;span class="pre"&gt;8000&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;
+This command will create an HTTP Server hosted on port &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;8000&lt;/span&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can use this server for file sharing purposes.&lt;br/&gt;
+To see the contents of the folder, enter the following URL in any web browser:&lt;br/&gt;
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;localhost:8000&lt;/span&gt;&lt;/code&gt; or &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;127.0.0.1:8000&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can use this server to share files between the devices on the LAN.&lt;br/&gt;
+First, find the local IP address of the device on which the server is hosted using the command &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ipconfig&lt;/span&gt;&lt;/code&gt; (For Windows) or &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ifconfig&lt;/span&gt;&lt;/code&gt; (For Linux).&lt;br/&gt;
+Then, enter the URL &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;&amp;lt;ip-address&amp;gt;:8000&lt;/span&gt;&lt;/code&gt; in any web browser of the devices connected to the LAN.&lt;/p&gt;
+&lt;div class="admonition tip"&gt;
+&lt;p class="admonition-title"&gt;Tip&lt;/p&gt;
+&lt;p&gt;You can host a website using this server by placing the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;index.html&lt;/span&gt;&lt;/code&gt; file in the root folder.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks//Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
+ 
+&lt;p&gt;Besides its usage as a normal variable, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;_&lt;/span&gt;&lt;/code&gt; is a special variable in Python which returns the value of the last executed expression in Python interpreter.&lt;/p&gt;
+&lt;p&gt;This is useful when we would like to access the result of the previous calculation or we would like to interact with objects without assigning a name.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example - 1&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="go"&gt;15&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;
+&lt;span class="go"&gt;15&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Example - 2&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="highlight-python notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="gp"&gt;&amp;gt;&amp;gt;&amp;gt; &lt;/span&gt;&lt;span class="n"&gt;_&lt;/span&gt;
+&lt;span class="go"&gt;[10, 5]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item></channel></rss>
