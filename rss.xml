@@ -4,7 +4,7 @@
 &lt;p&gt;We can use &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;*&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a list, tuple and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;**&lt;/span&gt;&lt;/code&gt; operator to unpack the arguments out of a dictionary.&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -12,7 +12,7 @@
 &lt;/div&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;list1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;list1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;tuple1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;dict1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;'a'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'c'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -21,36 +21,36 @@
 &lt;/div&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;list1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;list1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;1 2 3
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;1 2 3
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;tuple1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;tuple1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;4 5 6
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;4 5 6
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;dict1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;dict1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;7 8 9
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;7 8 9
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -75,12 +75,12 @@
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Date Parser</title><link>https://jimit105.github.io/pytricks/Date Parser.html</link><description>&lt;div class="section" id="date-parser"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Date Parser</title><link>https://jimit105.github.io/pytricks/Date Parser.html</link><description>&lt;div class="section" id="date-parser"&gt;
  
 &lt;p&gt;Convert any date in a specified format&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;dateutil.parser&lt;/span&gt;
 
 &lt;span class="n"&gt;input_date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'10th May 1996'&lt;/span&gt;
@@ -94,7 +94,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;10-05-1996
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;10-05-1996
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -119,7 +119,7 @@
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Dockerfile for Python</title><link>https://jimit105.github.io/pytricks/Dockerfile for Python.html</link><description>&lt;div class="section" id="dockerfile-for-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Dockerfile for Python</title><link>https://jimit105.github.io/pytricks/Dockerfile for Python.html</link><description>&lt;div class="section" id="dockerfile-for-python"&gt;
  
 &lt;p&gt;Minimal Dockerfile for Python Applications&lt;/p&gt;
 &lt;div class="highlight-dockerfile notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="s"&gt;python:3.6&lt;/span&gt;
@@ -160,11 +160,11 @@
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>For-else in Python</title><link>https://jimit105.github.io/pytricks/For-else.html</link><description>&lt;div class="section" id="for-else-in-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>For-else in Python</title><link>https://jimit105.github.io/pytricks/For-else.html</link><description>&lt;div class="section" id="for-else-in-python"&gt;
  
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="k"&gt;break&lt;/span&gt;
 &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -174,7 +174,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;No break encountered
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;No break encountered
 Out of loop!
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -182,7 +182,7 @@ Out of loop!
 &lt;/div&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="k"&gt;break&lt;/span&gt;
 &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
@@ -192,7 +192,7 @@ Out of loop!
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;Out of loop!
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;Out of loop!
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -217,12 +217,12 @@ Out of loop!
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Hide prints</title><link>https://jimit105.github.io/pytricks/Hide print.html</link><description>&lt;div class="section" id="hide-prints"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Hide prints</title><link>https://jimit105.github.io/pytricks/Hide print.html</link><description>&lt;div class="section" id="hide-prints"&gt;
  
 &lt;p&gt;Hide print statements in specific sections of the code&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
-&lt;div class="highlight-ipython3 notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
 
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HiddenPrints&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__enter__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -242,7 +242,7 @@ Out of loop!
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="cell_output docutils container"&gt;
-&lt;div class="output stream highlight-myst-ansi notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;This will be printed as before
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;This will be printed as before
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -267,7 +267,7 @@ Out of loop!
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Python HTTP Server</title><link>https://jimit105.github.io/pytricks/Python HTTP Server.html</link><description>&lt;div class="section" id="python-http-server"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Python HTTP Server</title><link>https://jimit105.github.io/pytricks/Python HTTP Server.html</link><description>&lt;div class="section" id="python-http-server"&gt;
  
 &lt;p&gt;To create a simple Python HTTP Server simply navigate to the desired folder and type the following in command prompt:
 &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;http.server&lt;/span&gt; &lt;span class="pre"&gt;8000&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;
@@ -302,7 +302,7 @@ Then, enter the URL &lt;code class="docutils literal notranslate"&gt;&lt;span cl
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks/Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks/Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
  
 &lt;p&gt;Besides its usage as a normal variable, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;_&lt;/span&gt;&lt;/code&gt; is a special variable in Python which returns the value of the last executed expression in Python interpreter.&lt;/p&gt;
 &lt;p&gt;This is useful when we would like to access the result of the previous calculation or we would like to interact with objects without assigning a name.&lt;/p&gt;
@@ -342,4 +342,4 @@ Then, enter the URL &lt;code class="docutils literal notranslate"&gt;&lt;span cl
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 25 Aug 2020 00:00:00 </pubDate></item></channel></rss>
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item></channel></rss>
