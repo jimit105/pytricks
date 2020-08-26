@@ -302,6 +302,57 @@ Then, enter the URL &lt;code class="docutils literal notranslate"&gt;&lt;span cl
         predefinedOutput: true
     }
     &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Swap two numbers</title><link>https://jimit105.github.io/pytricks/Swap two numbers.html</link><description>&lt;div class="section" id="swap-two-numbers"&gt;
+ 
+&lt;p&gt;Swap two numbers in a single line of code&lt;/p&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'a=&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;, b=&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;a=10,b=5
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell docutils container"&gt;
+&lt;div class="cell_input docutils container"&gt;
+&lt;div class="highlight-default notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'a=&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;, b=&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell_output docutils container"&gt;
+&lt;div class="output stream highlight-none notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;a=5, b=10
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jimit105/pytricks",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
     &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Wed, 26 Aug 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks/Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
  
 &lt;p&gt;Besides its usage as a normal variable, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;_&lt;/span&gt;&lt;/code&gt; is a special variable in Python which returns the value of the last executed expression in Python interpreter.&lt;/p&gt;
