@@ -1,4 +1,4 @@
-# `assert` keyword
+# Assertions
 
 The `assert` keyword in Python is used to test a condition.  
 If the condition evaluates to `True`, then the program executes as normal.  
