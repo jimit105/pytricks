@@ -51,7 +51,7 @@
 <meta property="og:url"         content="https://jimit105.github.io/pytricks/Swap two numbers.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Swap two numbers" />
-<meta property="og:description" content="Swap two numbers  Swap two numbers in a single line of code  a = 10 b = 5  print(f&#39;a={a}, b={b}&#39;)  a=10,b=5   a, b = b, a print(f&#39;a={a}, b={b}&#39;)  a=5, b=10 " />
+<meta property="og:description" content="Swap two numbers  Swap two numbers in a single line of code  a = 10 b = 5  print(&#39;Before&#39;) print(f&#39;a={a}, b={b}&#39;)  Before a=10, b=5   a, b = b, a  print(&#39;After&#39;" />
 <meta property="og:image"       content="https://jimit105.github.io/pytricks/_static/py_logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -260,12 +260,14 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Before&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>a=10,b=5
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Before
+a=10, b=5
 </pre></div>
 </div>
 </div>
@@ -273,12 +275,15 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;After&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>a=5, b=10
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>After
+a=5, b=10
 </pre></div>
 </div>
 </div>
