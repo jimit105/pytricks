@@ -75,7 +75,7 @@
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;assert&lt;/span&gt;&lt;/code&gt; keyword</title><link>https://jimit105.github.io/pytricks/Assertion.html</link><description>&lt;div class="section" id="assert-keyword"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Assertions</title><link>https://jimit105.github.io/pytricks/Assertions.html</link><description>&lt;div class="section" id="assertions"&gt;
  
 &lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;assert&lt;/span&gt;&lt;/code&gt; keyword in Python is used to test a condition.&lt;br/&gt;
 If the condition evaluates to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;True&lt;/span&gt;&lt;/code&gt;, then the program executes as normal.&lt;br/&gt;
