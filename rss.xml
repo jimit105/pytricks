@@ -75,7 +75,7 @@
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Assertions</title><link>https://jimit105.github.io/pytricks/Assertions.html</link><description>&lt;div class="section" id="assertions"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Assertions</title><link>https://jimit105.github.io/pytricks/Assertions.html</link><description>&lt;div class="section" id="assertions"&gt;
  
 &lt;p&gt;The &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;assert&lt;/span&gt;&lt;/code&gt; keyword in Python is used to test a condition.&lt;br/&gt;
 If the condition evaluates to &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;True&lt;/span&gt;&lt;/code&gt;, then the program executes as normal.&lt;br/&gt;
@@ -129,7 +129,7 @@ But if the condition evaluates to &lt;code class="docutils literal notranslate"&
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Date Parser</title><link>https://jimit105.github.io/pytricks/Date Parser.html</link><description>&lt;div class="section" id="date-parser"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Date Parser</title><link>https://jimit105.github.io/pytricks/Date Parser.html</link><description>&lt;div class="section" id="date-parser"&gt;
  
 &lt;p&gt;Convert any date in a specified format&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
@@ -173,7 +173,7 @@ But if the condition evaluates to &lt;code class="docutils literal notranslate"&
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Dockerfile for Python</title><link>https://jimit105.github.io/pytricks/Dockerfile for Python.html</link><description>&lt;div class="section" id="dockerfile-for-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Dockerfile for Python</title><link>https://jimit105.github.io/pytricks/Dockerfile for Python.html</link><description>&lt;div class="section" id="dockerfile-for-python"&gt;
  
 &lt;p&gt;Minimal Dockerfile for Python Applications&lt;/p&gt;
 &lt;div class="highlight-dockerfile notranslate"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span/&gt;&lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="s"&gt;python:3.6&lt;/span&gt;
@@ -214,7 +214,7 @@ But if the condition evaluates to &lt;code class="docutils literal notranslate"&
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>For-else in Python</title><link>https://jimit105.github.io/pytricks/For-else.html</link><description>&lt;div class="section" id="for-else-in-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>For-else in Python</title><link>https://jimit105.github.io/pytricks/For-else.html</link><description>&lt;div class="section" id="for-else-in-python"&gt;
  
 &lt;div class="cell docutils container"&gt;
 &lt;div class="cell_input docutils container"&gt;
@@ -271,7 +271,7 @@ Out of loop!
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Hide prints</title><link>https://jimit105.github.io/pytricks/Hide print.html</link><description>&lt;div class="section" id="hide-prints"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Hide prints</title><link>https://jimit105.github.io/pytricks/Hide print.html</link><description>&lt;div class="section" id="hide-prints"&gt;
  
 &lt;p&gt;Hide print statements in specific sections of the code&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
@@ -321,7 +321,7 @@ Out of loop!
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Python HTTP Server</title><link>https://jimit105.github.io/pytricks/Python HTTP Server.html</link><description>&lt;div class="section" id="python-http-server"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Python HTTP Server</title><link>https://jimit105.github.io/pytricks/Python HTTP Server.html</link><description>&lt;div class="section" id="python-http-server"&gt;
  
 &lt;p&gt;To create a simple Python HTTP Server simply navigate to the desired folder and type the following in command prompt:
 &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;python&lt;/span&gt; &lt;span class="pre"&gt;-m&lt;/span&gt; &lt;span class="pre"&gt;http.server&lt;/span&gt; &lt;span class="pre"&gt;8000&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;
@@ -356,7 +356,7 @@ Then, enter the URL &lt;code class="docutils literal notranslate"&gt;&lt;span cl
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Swap two numbers</title><link>https://jimit105.github.io/pytricks/Swap two numbers.html</link><description>&lt;div class="section" id="swap-two-numbers"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Swap two numbers</title><link>https://jimit105.github.io/pytricks/Swap two numbers.html</link><description>&lt;div class="section" id="swap-two-numbers"&gt;
  
 &lt;p&gt;Swap two numbers in a single line of code&lt;/p&gt;
 &lt;div class="cell docutils container"&gt;
@@ -412,7 +412,7 @@ a=5, b=10
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks/Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item><item><title>Underscore in Python</title><link>https://jimit105.github.io/pytricks/Underscore in Python.html</link><description>&lt;div class="section" id="underscore-in-python"&gt;
  
 &lt;p&gt;Besides its usage as a normal variable, &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;_&lt;/span&gt;&lt;/code&gt; is a special variable in Python which returns the value of the last executed expression in Python interpreter.&lt;/p&gt;
 &lt;p&gt;This is useful when we would like to access the result of the previous calculation or we would like to interact with objects without assigning a name.&lt;/p&gt;
@@ -452,4 +452,4 @@ a=5, b=10
         predefinedOutput: true
     }
     &lt;/script&gt;
-    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Thu, 27 Aug 2020 00:00:00 </pubDate></item></channel></rss>
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</description><pubDate>Tue, 01 Sep 2020 00:00:00 </pubDate></item></channel></rss>
