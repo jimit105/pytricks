@@ -2,9 +2,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>For-else in Python &#8212; PyTricks</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-dropdown.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
@@ -24,11 +25,8 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/mystnb.js"></script>
     <script src="_static/sphinx-book-theme.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -40,8 +38,8 @@
     <link rel="shortcut icon" href="_static/favicon_py.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dockerfile for Python" href="Dockerfile for Python.html" />
-    <link rel="prev" title="Swap two numbers" href="Swap two numbers.html" />
+    <link rel="next" title="Dockerfile for Python" href="Dockerfile%20for%20Python.html" />
+    <link rel="prev" title="Python Tricks" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -91,28 +89,23 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="Swap two numbers.html">
-   Swap two numbers
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    For-else in Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Dockerfile for Python.html">
+  <a class="reference internal" href="Dockerfile%20for%20Python.html">
    Dockerfile for Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Underscore in Python.html">
+  <a class="reference internal" href="Underscore%20in%20Python.html">
    Underscore in Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Date Parser.html">
+  <a class="reference internal" href="Date%20Parser.html">
    Date Parser
   </a>
  </li>
@@ -122,17 +115,17 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Argument Unpacking.html">
+  <a class="reference internal" href="Argument%20Unpacking.html">
    Argument Unpacking
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Hide print.html">
+  <a class="reference internal" href="Hide%20print.html">
    Hide prints
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Python HTTP Server.html">
+  <a class="reference internal" href="Python%20HTTP%20Server.html">
    Python HTTP Server
   </a>
  </li>
@@ -261,7 +254,7 @@
 <h1>For-else in Python<a class="headerlink" href="#for-else-in-python" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">break</span>
 <span class="k">else</span><span class="p">:</span>
@@ -271,7 +264,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>No break encountered
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No break encountered
 Out of loop!
 </pre></div>
 </div>
@@ -279,7 +272,7 @@ Out of loop!
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">break</span>
 <span class="k">else</span><span class="p">:</span>
@@ -289,7 +282,7 @@ Out of loop!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>Out of loop!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Out of loop!
 </pre></div>
 </div>
 </div>
@@ -324,8 +317,8 @@ Out of loop!
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Swap two numbers.html" title="previous page">Swap two numbers</a>
-    <a class='right-next' id="next-link" href="Dockerfile for Python.html" title="next page">Dockerfile for Python</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Python Tricks</a>
+    <a class='right-next' id="next-link" href="Dockerfile%20for%20Python.html" title="next page">Dockerfile for Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
