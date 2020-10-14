@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Argument Unpacking &#8212; PyTricks</title>
+    <title>Traceback &#8212; PyTricks</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -53,22 +53,21 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://jimit105.github.io/pytricks/Argument Unpacking.html" />
+    <link rel="canonical" href="https://jimit105.github.io/pytricks/Traceback.html" />
     <link rel="shortcut icon" href="_static/favicon_py.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Hide prints" href="Hide%20print.html" />
-    <link rel="prev" title="Assertions" href="Assertions.html" />
+    <link rel="prev" title="Hide prints" href="Hide%20print.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://jimit105.github.io/pytricks/Argument Unpacking.html" />
+<meta property="og:url"         content="https://jimit105.github.io/pytricks/Traceback.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Argument Unpacking" />
-<meta property="og:description" content="Argument Unpacking  We can use * operator to unpack the arguments out of a list, tuple and ** operator to unpack the arguments out of a dictionary.  def func(a," />
+<meta property="og:title"       content="Traceback" />
+<meta property="og:description" content="Traceback  traceback provides an interface to print stack traces of Python programs. It exactly mimics the behaviour of the Python interpreter when it prints a " />
 <meta property="og:image"       content="https://jimit105.github.io/pytricks/_static/py_logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -143,8 +142,8 @@
    Assertions
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Argument%20Unpacking.html">
    Argument Unpacking
   </a>
  </li>
@@ -153,8 +152,8 @@
    Hide prints
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Traceback.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Traceback
   </a>
  </li>
@@ -200,7 +199,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Argument Unpacking.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Traceback.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -220,10 +219,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2FArgument Unpacking.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/jimit105/pytricks/issues/new?title=Issue%20on%20page%20%2FTraceback.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/Argument Unpacking.ipynb"><button
+        <a class="edit-button" href="https://github.com/jimit105/pytricks/edit/master/Traceback.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -243,7 +242,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/jimit105/pytricks/master?urlpath=tree/Argument Unpacking.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/jimit105/pytricks/master?urlpath=tree/Traceback.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -251,7 +250,7 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/jimit105/pytricks/blob/master/Argument Unpacking.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/jimit105/pytricks/blob/master/Traceback.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
                     src="_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
@@ -275,62 +274,30 @@
         
               <div>
                 
-  <div class="section" id="argument-unpacking">
-<h1>Argument Unpacking<a class="headerlink" href="#argument-unpacking" title="Permalink to this headline">¶</a></h1>
-<p>We can use <code class="docutils literal notranslate"><span class="pre">*</span></code> operator to unpack the arguments out of a list, tuple and <code class="docutils literal notranslate"><span class="pre">**</span></code> operator to unpack the arguments out of a dictionary.</p>
+  <div class="section" id="traceback">
+<h1>Traceback<a class="headerlink" href="#traceback" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">traceback</span></code> provides an interface to print stack traces of Python programs. It exactly mimics the behaviour of the Python interpreter when it prints a stack trace.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">list1</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">traceback</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="mi">5</span><span class="o">/</span><span class="mi">0</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 2 3
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;&lt;ipython-input-1-5b35d724d9df&gt;&quot;, line 4, in &lt;module&gt;
+    5/0
+ZeroDivisionError: division by zero
 </pre></div>
 </div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">tuple1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4 5 6
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">func</span><span class="p">(</span><span class="o">**</span><span class="n">dict1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7 8 9
-</pre></div>
-</div>
-</div>
-</div>
+<p><strong>Reference</strong>: <a class="reference external" href="https://docs.python.org/3/library/traceback.html">https://docs.python.org/3/library/traceback.html</a></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -361,8 +328,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="Assertions.html" title="previous page">Assertions</a>
-    <a class='right-next' id="next-link" href="Hide%20print.html" title="next page">Hide prints</a>
+    <a class='left-prev' id="prev-link" href="Hide%20print.html" title="previous page">Hide prints</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
