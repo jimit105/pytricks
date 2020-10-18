@@ -38,3 +38,8 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
+
+    - name: Update Sitemap
+      run: |
+        python -u update_sitemap.py
+        
