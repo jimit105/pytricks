@@ -25,8 +25,8 @@
     href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -40,12 +40,11 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -57,8 +56,8 @@
     <link rel="shortcut icon" href="_static/favicon_py.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Underscore in Python" href="Underscore%20in%20Python.html" />
-    <link rel="prev" title="Python Tricks" href="index.html" />
+    <link rel="next" title="For-else in Python" href="For-else.html" />
+    <link rel="prev" title="Hide prints" href="Hide%20print.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -92,15 +91,12 @@
   <h1 class="site-logo" id="site-title">PyTricks</h1>
   
 </a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form>
-
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+    <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="index.html">
    Python Tricks
@@ -108,29 +104,9 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Dockerfile for Python
-  </a>
- </li>
  <li class="toctree-l1">
   <a class="reference internal" href="Underscore%20in%20Python.html">
    Underscore in Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Function%20Annotations.html">
-   Function Annotations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="For-else.html">
-   For-else in Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Python%20HTTP%20Server.html">
-   Python HTTP Server
   </a>
  </li>
  <li class="toctree-l1">
@@ -139,8 +115,13 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Assertions.html">
-   Assertions
+  <a class="reference internal" href="Python%20HTTP%20Server.html">
+   Python HTTP Server
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Traceback.html">
+   Traceback
   </a>
  </li>
  <li class="toctree-l1">
@@ -153,19 +134,32 @@
    Hide prints
   </a>
  </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dockerfile for Python
+  </a>
+ </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Traceback.html">
-   Traceback
+  <a class="reference internal" href="For-else.html">
+   For-else in Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Function%20Annotations.html">
+   Function Annotations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Assertions.html">
+   Assertions
   </a>
  </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Subscribe to <a href="https://jimit105.github.io/pytricks/rss.xml">RSS Feed</a>
+  Subscribe to <a href="https://jimit105.github.io/pytricks/rss.xml">RSS Feed</a>><br/>Maintained by <a href="https://www.linkedin.com/in/jimit105/" _target="blank">Jimit Dholakia</a>
 </div>
 
 </div>
@@ -191,11 +185,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        <div class="dropdown-buttons-trigger">
+        
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -207,8 +201,8 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
+
         <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -301,8 +295,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Python Tricks</a>
-    <a class='right-next' id="next-link" href="Underscore%20in%20Python.html" title="next page">Underscore in Python</a>
+    <a class='left-prev' id="prev-link" href="Hide%20print.html" title="previous page">Hide prints</a>
+    <a class='right-next' id="next-link" href="For-else.html" title="next page">For-else in Python</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
