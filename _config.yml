@@ -19,7 +19,7 @@ html:
   use_repository_button : true
   use_issues_button: true
   favicon: favicon_py.png
-  extra_navbar: Subscribe to <a href="https://jimit105.github.io/pytricks/rss.xml">RSS Feed</a>
+  extra_navbar: Subscribe to <a href="https://jimit105.github.io/pytricks/rss.xml">RSS Feed</a>><br/>Maintained by <a href="https://www.linkedin.com/in/jimit105/" _target="blank">Jimit Dholakia</a>
     
 sphinx:
   extra_extensions: ['sphinx_sitemap', 'yasfb']
