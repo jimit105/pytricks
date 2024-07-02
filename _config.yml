@@ -12,7 +12,7 @@ repository:
   url: https://github.com/jimit105/pytricks
     
 html:
-  google_analytics_id: UA-136790987-1
+  google_analytics_id: G-WH53LYHDLQ
   home_page_in_navbar: true
   baseurl: https://jimit105.github.io/pytricks
   use_edit_page_button: true
