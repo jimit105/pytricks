@@ -25,11 +25,11 @@ jobs:
         
     - name: Generate Table of Contents
       run: |
-        jupyter-book toc .
+        jupyter-book toc from-project pytricks
         
     - name: Build the book
       run: |
-        jupyter-book build .
+        jupyter-book build pytricks
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
