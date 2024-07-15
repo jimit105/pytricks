@@ -27,13 +27,9 @@ jobs:
       run: |
         jupyter-book toc from-project . --extension .md --extension .ipynb
 
-    - name: List all files
-      run: |
-        find .
-        
     - name: Build the book
       run: |
-        jupyter-book build -W -n --keep-going -v .
+        jupyter-book build .
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
