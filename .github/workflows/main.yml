@@ -33,7 +33,7 @@ jobs:
         
     - name: Build the book
       run: |
-        jupyter-book build .
+        jupyter-book build -W -n --keep-going -v pytricks/
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
