@@ -1,4 +1,3 @@
-importlib-metadata<5
 jupyter-book
 sphinx-sitemap
 python-dateutil
