@@ -23,9 +23,9 @@ jobs:
       run: |
         pip install -r requirements.txt
         
-    - name: Generate Table of Contents
-      run: |
-        jupyter-book toc from-project . --extension .md --extension .ipynb
+    # - name: Generate Table of Contents
+    # run: |
+    #   jupyter-book toc from-project . --extension .md --extension .ipynb
 
     - name: Build the book
       run: |
